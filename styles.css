@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: auto;
+}
+
+
+body {
+    justify-content: center;
+    font-family:'Times New Roman', Times, serif;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    background-color: #cad8e4;
+}
+
+.container {
+    text-align: center;
+}
+
+.boxs {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box {
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.box h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.box .price {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.box ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.box ul li {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
+
+button {
+    background-color: #4caf50;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    box-shadow: #4caf50;
+}
+
+button:hover {
+    background-color: #2d9232;
+}
+
+.popular {
+    position: relative;
+    border: 2px solid green;
+}
+
+.most-popular {
+    font-size: 0.9em;
+    position: absolute;
+    transform: translateX(-50%);
+    background-color: green;
+    color: white;
+    top: -22px;
+    left: 50%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 130px;
+}
